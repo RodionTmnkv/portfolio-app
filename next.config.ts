@@ -1,16 +1,9 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+    output: 'export',
     images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'placehold.co',
-                port: '',
-                pathname: '/**',
-            },
-        ],
-        unoptimized: process.env.NODE_ENV === 'development',
+        unoptimized: true,
     },
 };
 

@@ -18,7 +18,8 @@
         "validate": "npm run type-check && npm run lint:strict && npm run format:check",
         "validate:dev": "npm run type-check && npm run lint && npm run format:check",
         "fix": "npm run lint:fix && npm run format",
-        "prepare": "husky"
+        "prepare": "husky",
+        "deploy": "gh-pages -d out"
     },
     "dependencies": {
         "@ant-design/icons": "^6.2.5",
@@ -48,6 +49,7 @@
         "eslint-plugin-react": "^7.37.5",
         "eslint-plugin-react-hooks": "^7.1.1",
         "eslint-plugin-unused-imports": "^4.4.1",
+        "gh-pages": "^6.3.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.4.0",
         "prettier": "^3.8.3",
