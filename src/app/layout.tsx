@@ -10,6 +10,9 @@ export const metadata: Metadata = {
         template: `%s | ${siteConfig.name}`,
     },
     description: siteConfig.description,
+    icons: {
+        icon: `${siteConfig.basePath}/favicon.ico`,
+    },
 };
 
 const theme = {
