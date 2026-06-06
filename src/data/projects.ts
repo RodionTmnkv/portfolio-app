@@ -29,6 +29,6 @@ export const projects: Project[] = [
         imageUrl: '/images/github.png',
         technologies: ['Next.js', 'TypeScript', 'Sass', 'Framer Motion'],
         githubUrl: 'https://github.com/RodionTmnkv',
-        demoUrl: 'https://example.com',
+        demoUrl: 'https://rodiontmnkv.github.io/portfolio-app/',
     },
 ];

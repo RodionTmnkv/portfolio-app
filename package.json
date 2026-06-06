@@ -19,7 +19,9 @@
         "validate:dev": "npm run type-check && npm run lint && npm run format:check",
         "fix": "npm run lint:fix && npm run format",
         "prepare": "husky",
-        "deploy": "gh-pages -d out"
+        "deploy:win": ".\\scripts\\deploy.bat",
+        "deploy:bash": "bash scripts/deploy.sh",
+        "deploy": "bash scripts/deploy.sh"
     },
     "dependencies": {
         "@ant-design/icons": "^6.2.5",
