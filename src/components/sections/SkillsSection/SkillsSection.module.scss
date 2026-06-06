@@ -1,0 +1,15 @@
+.section {
+    margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.title {
+    margin-bottom: clamp(1rem, 2vw, 1.5rem) !important;
+    font-size: clamp(1.25rem, 3vw, 2rem) !important;
+}
+
+.container {
+    background: #fafafa;
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: 12px;
+    width: 100%;
+}

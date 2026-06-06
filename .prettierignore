@@ -1,0 +1,23 @@
+# Зависимости
+node_modules/
+.next/
+out/
+build/
+
+# Сгенерированные файлы
+next-env.d.ts
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Сборка
+dist/
+coverage/
+
+# Разное
+*.min.js
+*.min.css
+public/
+.env*
+.git/
+.husky/
