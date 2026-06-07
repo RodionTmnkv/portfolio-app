@@ -7,7 +7,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "build:gh-pages": "set GITHUB_PAGES=true && next build",
+        "build:gh-pages": "cross-env GITHUB_PAGES=true next build",
         "deploy": "npm run build:gh-pages && gh-pages -d out -b gh-pages --dotfiles",
         "start": "next start",
         "lint": "eslint .",
@@ -43,6 +43,7 @@
         "@typescript-eslint/eslint-plugin": "^8.60.1",
         "@typescript-eslint/parser": "^8.60.1",
         "concurrently": "^10.0.3",
+        "cross-env": "^10.1.0",
         "eslint": "^9.39.4",
         "eslint-config-next": "^16.2.7",
         "eslint-config-prettier": "^10.1.8",
