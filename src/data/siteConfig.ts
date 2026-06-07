@@ -1,3 +1,5 @@
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 export const siteConfig = {
     name: 'Rodion Temnikov',
     title: 'Frontend Developer',
@@ -5,7 +7,10 @@ export const siteConfig = {
     description:
         'Professional frontend developer specializing in React ecosystem',
     author: 'Rodion Temnikov',
-    cvUrl: '/assets/temnikov_frontend_resume.pdf',
+    basePath: isGitHubPages ? '/portfolio-app' : '',
+    cvUrl: isGitHubPages
+        ? '/portfolio-app/assets/temnikov_frontend_resume.pdf'
+        : '/assets/temnikov_frontend_resume.pdf',
     social: {
         github: 'https://github.com/RodionTmnkv',
         hhru: 'https://rostov.hh.ru/resume/79256586ff0ffe6a020039ed1f33594e31626f',

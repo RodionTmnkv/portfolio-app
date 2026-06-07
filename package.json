@@ -7,6 +7,8 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
+        "build:gh-pages": "set GITHUB_PAGES=true && next build",
+        "deploy": "npm run build:gh-pages && gh-pages -d out -b gh-pages --dotfiles",
         "start": "next start",
         "lint": "eslint .",
         "lint:strict": "eslint . --max-warnings 0",
@@ -20,8 +22,7 @@
         "fix": "npm run lint:fix && npm run format",
         "prepare": "husky",
         "deploy:win": ".\\scripts\\deploy.bat",
-        "deploy:bash": "bash scripts/deploy.sh",
-        "deploy": "bash scripts/deploy.sh"
+        "deploy:bash": "bash scripts/deploy.sh"
     },
     "dependencies": {
         "@ant-design/icons": "^6.2.5",
